@@ -1,0 +1,6 @@
+print("Bem vindo ao Calculador de Gorjetas.")
+valor_conta = float(input("Qual o valor da conta? R$"))
+gorjeta = int(input("Qual a porcentagem da gorjeta? 10, 12 ou 15? "))
+pessoas = int(input("Quantas pessoas pra dividir a conta? "))
+conta_dividida = (valor_conta / pessoas) * (1 + (gorjeta / 100))
+print("Cada pessoa deve pagar R$%.2f" % conta_dividida) 
